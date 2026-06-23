@@ -1,0 +1,265 @@
+[0m21:50:09.806304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002745475B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027455BBBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027455BBB750>]}
+
+
+============================== 21:50:09.811088 | 07eddd27-7fad-4e20-afae-2324cfbb7094 ==============================
+[0m21:50:09.811088 [info ] [MainThread]: Running with dbt=1.11.7
+[0m21:50:09.811828 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hanto\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:50:09.889366 [info ] [MainThread]: dbt version: 1.11.7
+[0m21:50:09.889804 [info ] [MainThread]: python version: 3.13.14
+[0m21:50:09.890121 [info ] [MainThread]: python path: C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\.venv\Scripts\python.exe
+[0m21:50:09.890416 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:50:09.893747 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:50:09.894216 [info ] [MainThread]: Using profiles dir at C:\Users\hanto\.dbt
+[0m21:50:09.894619 [info ] [MainThread]: Using profiles.yml file at C:\Users\hanto\.dbt\profiles.yml
+[0m21:50:09.894983 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml
+[0m21:50:09.895378 [info ] [MainThread]: Configuration:
+[0m21:50:09.895706 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m21:50:09.896043 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:50:09.896336 [info ] [MainThread]: Required dependencies:
+[0m21:50:09.896643 [debug] [MainThread]: Executing "git --help"
+[0m21:50:09.933236 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:50:09.933849 [debug] [MainThread]: STDERR: "b''"
+[0m21:50:09.934227 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:50:09.934589 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m21:50:09.934979 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:50:09.935337 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "fred_financials", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m21:50:09.935685 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml> not found
+
+[0m21:50:09.936522 [debug] [MainThread]: Command `dbt debug` failed at 21:50:09.936421 after 0.27 seconds
+[0m21:50:09.936837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027456D38C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027456BC4830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027456C88050>]}
+[0m21:50:09.937152 [debug] [MainThread]: Flushing usage events
+[0m21:50:10.336518 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:51:02.330756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9DD5B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9F1CBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9F1CB750>]}
+
+
+============================== 21:51:02.334758 | 0c949590-bb70-487e-97d5-0951288fddb2 ==============================
+[0m21:51:02.334758 [info ] [MainThread]: Running with dbt=1.11.7
+[0m21:51:02.335347 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\hanto\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:51:02.350953 [info ] [MainThread]: dbt version: 1.11.7
+[0m21:51:02.351374 [info ] [MainThread]: python version: 3.13.14
+[0m21:51:02.351746 [info ] [MainThread]: python path: C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\.venv\Scripts\python.exe
+[0m21:51:02.352120 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:51:02.355183 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:51:02.355597 [info ] [MainThread]: Using profiles dir at C:\Users\hanto\.dbt
+[0m21:51:02.355940 [info ] [MainThread]: Using profiles.yml file at C:\Users\hanto\.dbt\profiles.yml
+[0m21:51:02.356325 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml
+[0m21:51:02.356693 [info ] [MainThread]: Configuration:
+[0m21:51:02.357035 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m21:51:02.357368 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:51:02.357642 [info ] [MainThread]: Required dependencies:
+[0m21:51:02.357931 [debug] [MainThread]: Executing "git --help"
+[0m21:51:02.391437 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:51:02.391846 [debug] [MainThread]: STDERR: "b''"
+[0m21:51:02.392212 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:51:02.392555 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m21:51:02.392920 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:51:02.393225 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "fred_financials", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m21:51:02.393507 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml> not found
+
+[0m21:51:02.394408 [debug] [MainThread]: Command `dbt debug` failed at 21:51:02.394305 after 0.17 seconds
+[0m21:51:02.394730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FA01BB950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FA01D4A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FA024C5A0>]}
+[0m21:51:02.395126 [debug] [MainThread]: Flushing usage events
+[0m21:51:02.735248 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:52:31.712362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBE2ADB770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBE3F3BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBE3F3B750>]}
+
+
+============================== 21:52:31.716378 | 870a1b63-ff9a-451e-b88f-05ea17c6e8c3 ==============================
+[0m21:52:31.716378 [info ] [MainThread]: Running with dbt=1.11.7
+[0m21:52:31.716945 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\hanto\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init --skip-profile-setup airbnb', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:52:31.737231 [debug] [MainThread]: Starter project path: C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\.venv\Lib\site-packages\dbt\include\starter_project
+[0m21:52:31.761662 [info ] [MainThread]: 
+Your new dbt project "airbnb" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:52:31.762906 [debug] [MainThread]: Command `dbt init` succeeded at 21:52:31.762785 after 0.16 seconds
+[0m21:52:31.763211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBE4F2E2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBE4FF8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBE3DCB680>]}
+[0m21:52:31.763531 [debug] [MainThread]: Flushing usage events
+[0m21:52:32.357689 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:54:27.742860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBAEE6B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB02CBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB02CB750>]}
+
+
+============================== 21:54:27.747129 | 4bc37e68-a348-42a1-aca2-19cd9d949c53 ==============================
+[0m21:54:27.747129 [info ] [MainThread]: Running with dbt=1.11.7
+[0m21:54:27.747688 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\hanto\\OneDrive\\Desktop\\Siqi Chen Projects\\course', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:54:27.764638 [info ] [MainThread]: dbt version: 1.11.7
+[0m21:54:27.765101 [info ] [MainThread]: python version: 3.13.14
+[0m21:54:27.765433 [info ] [MainThread]: python path: C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\.venv\Scripts\python.exe
+[0m21:54:27.765756 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:54:28.158531 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:54:28.158959 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:54:28.159244 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:54:28.224177 [info ] [MainThread]: Using profiles dir at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course
+[0m21:54:28.224681 [info ] [MainThread]: Using profiles.yml file at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\profiles.yml
+[0m21:54:28.225099 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml
+[0m21:54:28.226147 [info ] [MainThread]: adapter type: snowflake
+[0m21:54:28.226520 [info ] [MainThread]: adapter version: 1.11.3
+[0m21:54:28.226992 [info ] [MainThread]: Configuration:
+[0m21:54:28.227316 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:54:28.227666 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:54:28.227975 [info ] [MainThread]: Required dependencies:
+[0m21:54:28.228291 [debug] [MainThread]: Executing "git --help"
+[0m21:54:28.260950 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:54:28.261408 [debug] [MainThread]: STDERR: "b''"
+[0m21:54:28.261772 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:54:28.262147 [info ] [MainThread]: Connection:
+[0m21:54:28.262523 [info ] [MainThread]:   account: plgaxsy-dh37044
+[0m21:54:28.262885 [info ] [MainThread]:   user: dbt
+[0m21:54:28.263225 [info ] [MainThread]:   database: AIRBNB
+[0m21:54:28.263580 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m21:54:28.263945 [info ] [MainThread]:   role: TRANSFORM
+[0m21:54:28.264305 [info ] [MainThread]:   schema: DEV
+[0m21:54:28.264707 [info ] [MainThread]:   authenticator: None
+[0m21:54:28.265040 [info ] [MainThread]:   oauth_client_id: None
+[0m21:54:28.265339 [info ] [MainThread]:   query_tag: None
+[0m21:54:28.265642 [info ] [MainThread]:   client_session_keep_alive: False
+[0m21:54:28.265930 [info ] [MainThread]:   host: None
+[0m21:54:28.266208 [info ] [MainThread]:   port: None
+[0m21:54:28.266479 [info ] [MainThread]:   proxy_host: None
+[0m21:54:28.266766 [info ] [MainThread]:   proxy_port: None
+[0m21:54:28.267054 [info ] [MainThread]:   protocol: None
+[0m21:54:28.267386 [info ] [MainThread]:   connect_retries: 1
+[0m21:54:28.267703 [info ] [MainThread]:   connect_timeout: None
+[0m21:54:28.268033 [info ] [MainThread]:   retry_on_database_errors: False
+[0m21:54:28.268393 [info ] [MainThread]:   retry_all: False
+[0m21:54:28.268718 [info ] [MainThread]:   insecure_mode: False
+[0m21:54:28.269024 [info ] [MainThread]:   reuse_connections: True
+[0m21:54:28.269318 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m21:54:28.269601 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m21:54:28.270074 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m21:54:28.548783 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m21:54:28.619179 [debug] [MainThread]: Using snowflake connection "debug"
+[0m21:54:28.619539 [debug] [MainThread]: On debug: select 1 as id
+[0m21:54:28.619797 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:54:29.789202 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m21:54:29.789596 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m21:54:29.789936 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:54:29.790378 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:54:29.790810 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml> not found
+
+[0m21:54:29.791208 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: plgaxsy-dh37044.snowflakecomputing.com:443. JWT token is invalid. [48b068e4-c447-425c-9d15-5ff39faa0710]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:54:29.792113 [debug] [MainThread]: Command `dbt debug` failed at 21:54:29.792013 after 2.16 seconds
+[0m21:54:29.792388 [debug] [MainThread]: Connection 'debug' was left open.
+[0m21:54:29.792627 [debug] [MainThread]: On debug: No close available on handle
+[0m21:54:29.792897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB274AB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB29FCB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBB257DD00>]}
+[0m21:54:29.793239 [debug] [MainThread]: Flushing usage events
+[0m21:54:30.142824 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:54:51.896570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1E72DB770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1E8747C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1E8747750>]}
+
+
+============================== 21:54:51.900825 | 6ae5061d-398e-457f-9c41-c808ec9bb2f2 ==============================
+[0m21:54:51.900825 [info ] [MainThread]: Running with dbt=1.11.7
+[0m21:54:51.901428 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\hanto\\OneDrive\\Desktop\\Siqi Chen Projects\\course', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:54:51.917795 [info ] [MainThread]: dbt version: 1.11.7
+[0m21:54:51.918200 [info ] [MainThread]: python version: 3.13.14
+[0m21:54:51.918494 [info ] [MainThread]: python path: C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\.venv\Scripts\python.exe
+[0m21:54:51.918779 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:54:52.278299 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:54:52.278704 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:54:52.278979 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:54:52.343081 [info ] [MainThread]: Using profiles dir at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course
+[0m21:54:52.343882 [info ] [MainThread]: Using profiles.yml file at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\profiles.yml
+[0m21:54:52.344363 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml
+[0m21:54:52.345223 [info ] [MainThread]: adapter type: snowflake
+[0m21:54:52.345574 [info ] [MainThread]: adapter version: 1.11.3
+[0m21:54:52.345922 [info ] [MainThread]: Configuration:
+[0m21:54:52.346211 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:54:52.346504 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:54:52.346787 [info ] [MainThread]: Required dependencies:
+[0m21:54:52.347084 [debug] [MainThread]: Executing "git --help"
+[0m21:54:52.378098 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:54:52.378552 [debug] [MainThread]: STDERR: "b''"
+[0m21:54:52.378903 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:54:52.379243 [info ] [MainThread]: Connection:
+[0m21:54:52.379644 [info ] [MainThread]:   account: plgaxsy-dh37044
+[0m21:54:52.380016 [info ] [MainThread]:   user: dbt
+[0m21:54:52.380378 [info ] [MainThread]:   database: AIRBNB
+[0m21:54:52.380862 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m21:54:52.384866 [info ] [MainThread]:   role: TRANSFORM
+[0m21:54:52.385363 [info ] [MainThread]:   schema: DEV
+[0m21:54:52.385698 [info ] [MainThread]:   authenticator: None
+[0m21:54:52.386014 [info ] [MainThread]:   oauth_client_id: None
+[0m21:54:52.386346 [info ] [MainThread]:   query_tag: None
+[0m21:54:52.386653 [info ] [MainThread]:   client_session_keep_alive: False
+[0m21:54:52.386936 [info ] [MainThread]:   host: None
+[0m21:54:52.387207 [info ] [MainThread]:   port: None
+[0m21:54:52.387471 [info ] [MainThread]:   proxy_host: None
+[0m21:54:52.387759 [info ] [MainThread]:   proxy_port: None
+[0m21:54:52.388062 [info ] [MainThread]:   protocol: None
+[0m21:54:52.388364 [info ] [MainThread]:   connect_retries: 1
+[0m21:54:52.388649 [info ] [MainThread]:   connect_timeout: None
+[0m21:54:52.388920 [info ] [MainThread]:   retry_on_database_errors: False
+[0m21:54:52.389186 [info ] [MainThread]:   retry_all: False
+[0m21:54:52.389453 [info ] [MainThread]:   insecure_mode: False
+[0m21:54:52.389780 [info ] [MainThread]:   reuse_connections: True
+[0m21:54:52.390086 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m21:54:52.390417 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m21:54:52.390939 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m21:54:52.667458 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m21:54:52.718085 [debug] [MainThread]: Using snowflake connection "debug"
+[0m21:54:52.718415 [debug] [MainThread]: On debug: select 1 as id
+[0m21:54:52.718649 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:54:53.199525 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m21:54:53.199867 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m21:54:53.200139 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:54:53.200528 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:54:53.200855 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\hanto\OneDrive\Desktop\Siqi Chen Projects\course\dbt_project.yml> not found
+
+[0m21:54:53.201218 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: plgaxsy-dh37044.snowflakecomputing.com:443. JWT token is invalid. [f1e7bf65-0f37-4bd3-88a3-f77478b2a9d5]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:54:53.202104 [debug] [MainThread]: Command `dbt debug` failed at 21:54:53.202006 after 1.43 seconds
+[0m21:54:53.202365 [debug] [MainThread]: Connection 'debug' was left open.
+[0m21:54:53.202616 [debug] [MainThread]: On debug: No close available on handle
+[0m21:54:53.202865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1EAD81F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1EAF58710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1EA9EDD00>]}
+[0m21:54:53.203166 [debug] [MainThread]: Flushing usage events
+[0m21:54:53.537324 [debug] [MainThread]: An error was encountered while trying to flush usage events
