@@ -31,6 +31,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   airbnb:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    # This config will be applied to all models within the example/ directory
+    +materialized: view
+    dim:
+      +materialized: table
+    src:
+      +materialized: ephemeral
+
